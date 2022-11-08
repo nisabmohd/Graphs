@@ -14,11 +14,13 @@ public class Representation {
         //    1 -> {2}
         //    2 -> {0}
         //    3 -> {4}
+        //    4 -> {}
         map.clear();
         map.put(0, new ArrayList<>(Arrays.asList(1)));
         map.put(1, new ArrayList<>(Arrays.asList(2)));
         map.put(2, new ArrayList<>(Arrays.asList(0)));
         map.put(3, new ArrayList<>(Arrays.asList(4)));
+        map.put(4, new ArrayList<>());
         return map;
     }
 

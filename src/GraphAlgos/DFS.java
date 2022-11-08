@@ -34,11 +34,11 @@ public class DFS {
         System.out.println(ans);
     }
 
-    private static List<Integer> dfs(Map<Integer, ArrayList<Integer>> map, int s, Set<Integer> vis) {
+    public static List<Integer> dfs(Map<Integer, ArrayList<Integer>> map, int s, Set<Integer> vis) {
         List<Integer> ans = new ArrayList<>();
         vis.add(s);
         ans.add(s);
-        map.getOrDefault(s, new ArrayList<>()).forEach(item -> {
+        map.get(s).forEach(item -> {
             if (!vis.contains(item)) {
                 ans.addAll(dfs(map, item, vis));
             }

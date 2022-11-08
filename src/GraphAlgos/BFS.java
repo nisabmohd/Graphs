@@ -20,7 +20,7 @@ public class BFS {
         }
         System.out.println(ans);
 
-        // bfs for directed graph
+//         bfs for directed graph
         map = getDirectedGraph();
         n = map.size();
         ans.clear();
@@ -34,7 +34,7 @@ public class BFS {
         System.out.println(ans);
     }
 
-    private static List<Integer> bfs(Map<Integer, ArrayList<Integer>> map, int s, Set<Integer> vis) {
+    public static List<Integer> bfs(Map<Integer, ArrayList<Integer>> map, int s, Set<Integer> vis) {
         List<Integer> ans = new ArrayList<>();
         Queue<Integer> q = new LinkedList<>();
         vis.add(s);
@@ -42,7 +42,7 @@ public class BFS {
         while (!q.isEmpty()) {
             int node = q.poll();
             ans.add(node);
-            map.getOrDefault(s, new ArrayList<>()).forEach(item -> {
+            map.get(node).forEach(item -> {
                 if (!vis.contains(item)) {
                     q.add(item);
                     vis.add(item);
