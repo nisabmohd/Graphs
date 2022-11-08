@@ -11,24 +11,25 @@ Graphs in data structures are non-linear data structures made up of a finite num
 
 Graphs are very useful data structures which can be to model various problems. These algorithms have direct applications on Social Networking sites, State Machine modeling and many more
 
-### Table Of Contents
+> ### Table Of Contents
 - Graph Representation
 - Breadth First Search (BFS)
 - Depth First Search (DFS)
 - Connected Components 
-- Bipartite Graph
-    - Using DFS
-    - Using BFS
-- Detect cycle in undirected graph 
-    - Using BFS
-    - Using DFS
+- Bipartite Graph using DFS
+- Bipartite Graph using BFS
+- Detect cycle in undirected graph using BFS
+- Detect cycle in undirected graph using DFS
 - Detect cycle in directed graph using DFS
 - Topological sort (DFS)
 -  Kahn's Algorith (BFS Topological sort)
 - Djikstra's Algorithm
 - Prim's Algorithm
 - Disjoint Sets (Union-Find)
-     - Direct Union Find
-     - Union Find using <bold>Rank</bold> and <bold>Path compression</bold>
+- Union Find using <bold>Rank</bold> and <bold>Path compression</bold>
 - Krushkal's Algo
 
+<br>
+<!-- 
+- Bellmanford Algo
+- Floyd Warshall -->

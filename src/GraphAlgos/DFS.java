@@ -1,7 +1,7 @@
 package GraphAlgos;
 
-import static GraphAlgos.GraphRepresentation.getDirectedGraph;
-import static GraphAlgos.GraphRepresentation.getUndirectedGraph;
+import static GraphAlgos.Representation.getDirectedGraph;
+import static GraphAlgos.Representation.getUndirectedGraph;
 import java.util.*;
 
 public class DFS {
@@ -12,6 +12,7 @@ public class DFS {
         int n = map.size();
         List<Integer> ans = new ArrayList<>();
         Set<Integer> vis = new HashSet<>();
+        // for loop for multiple components
         for (int i = 0; i < n; i++) {
             if (!vis.contains(i)) {
                 ans.addAll(dfs(map, i, vis));
@@ -24,6 +25,7 @@ public class DFS {
         n = map.size();
         ans.clear();
         vis.clear();
+        // for loop for multiple components
         for (int i = 0; i < n; i++) {
             if (!vis.contains(i)) {
                 ans.addAll(dfs(map, i, vis));

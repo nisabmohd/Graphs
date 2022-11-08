@@ -1,37 +1,37 @@
 package GraphAlgos;
 
 import java.util.*;
-import static GraphAlgos.GraphRepresentation.getDirectedGraph;
-import static GraphAlgos.GraphRepresentation.getUndirectedGraph;
+import static GraphAlgos.Representation.getDirectedGraph;
+import static GraphAlgos.Representation.getUndirectedGraph;
 
 public class BFS {
 
     public static void main(String[] args) {
-         // bfs for undirected graph
+        // bfs for undirected graph
         Map<Integer, ArrayList<Integer>> map = getUndirectedGraph();
         int n = map.size();
         List<Integer> ans = new ArrayList<>();
         Set<Integer> vis = new HashSet<>();
+        // for loop for multiple components
         for (int i = 0; i < n; i++) {
             if (!vis.contains(i)) {
                 ans.addAll(bfs(map, i, vis));
             }
         }
         System.out.println(ans);
-        
-        
-        
+
         // bfs for directed graph
         map = getDirectedGraph();
-        n=map.size();
+        n = map.size();
         ans.clear();
         vis.clear();
-         for (int i = 0; i < n; i++) {
+        // for loop for multiple components
+        for (int i = 0; i < n; i++) {
             if (!vis.contains(i)) {
                 ans.addAll(bfs(map, i, vis));
             }
         }
-      System.out.println(ans);
+        System.out.println(ans);
     }
 
     private static List<Integer> bfs(Map<Integer, ArrayList<Integer>> map, int s, Set<Integer> vis) {
@@ -42,7 +42,7 @@ public class BFS {
         while (!q.isEmpty()) {
             int node = q.poll();
             ans.add(node);
-            map.getOrDefault(s,new ArrayList<>()).forEach(item -> {
+            map.getOrDefault(s, new ArrayList<>()).forEach(item -> {
                 if (!vis.contains(item)) {
                     q.add(item);
                     vis.add(item);
