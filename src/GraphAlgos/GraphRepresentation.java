@@ -1,15 +1,15 @@
-package graphtheory;
+package GraphAlgos;
 
 import java.util.*;
 
 public class GraphRepresentation {
-// check out graph implementation in my data structure repo link : 
+     // check out graph implementation in my data structure repo link : 
     // https://github.com/nisabmohd/Data-Structures/tree/master/src/Graphs
 
     // We wil be using this graphs for entire graph theory for avoiding creation of graph every single time
-    Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+    private static final Map<Integer, ArrayList<Integer>> map = new HashMap<>();
 
-    public Map<Integer, ArrayList<Integer>> getDirectedGraph() {
+    public static Map<Integer, ArrayList<Integer>> getDirectedGraph() {
         //    0 -> {1}
         //    1 -> {2}
         //    2 -> {0}
@@ -20,7 +20,7 @@ public class GraphRepresentation {
         return map;
     }
 
-    public Map<Integer, ArrayList<Integer>> getUndirectedGraph() {
+    public static Map<Integer, ArrayList<Integer>> getUndirectedGraph() {
         //    0 -> {1,2}
         //    1 -> {0,4}
         //    2 -> {0,3}
