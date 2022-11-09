@@ -9,6 +9,7 @@ public class BipartiteDFS {
         int n = map.size();
         Integer[] colours = new Integer[n];
         boolean flag = true;
+        // null represnts uncoloured vertex
         for (int i = 0; i < n; i++) {
             if (colours[i] == null) {
                 if (!color(i, 0, map, colours)) {
