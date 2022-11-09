@@ -36,10 +36,12 @@ public class Representation {
         map.put(0, new ArrayList<>(Arrays.asList(1, 2)));
         map.put(1, new ArrayList<>(Arrays.asList(0, 4)));
         map.put(2, new ArrayList<>(Arrays.asList(0, 3)));
-        map.put(3, new ArrayList<>(Arrays.asList(2, 4)));
-        map.put(4, new ArrayList<>(Arrays.asList(3, 1)));
+        map.put(3, new ArrayList<>(Arrays.asList(2, 7)));
+        map.put(4, new ArrayList<>(Arrays.asList(7, 1)));
         map.put(5, new ArrayList<>(Arrays.asList(6)));
         map.put(6, new ArrayList<>(Arrays.asList(5)));
+        map.put(7, new ArrayList<>(Arrays.asList(4, 3)));
+
         return map;
     }
 }
