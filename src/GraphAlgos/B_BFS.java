@@ -1,8 +1,8 @@
 package GraphAlgos;
 
 import java.util.*;
-import static GraphAlgos.A_Representation.getDirectedGraph;
-import static GraphAlgos.A_Representation.getUndirectedGraph;
+import static GraphAlgos.A__Representation.getDirectedGraph;
+import static GraphAlgos.A__Representation.getUndirectedGraph;
 
 public class B_BFS {
 

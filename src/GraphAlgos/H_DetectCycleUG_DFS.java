@@ -5,7 +5,7 @@ import java.util.*;
 public class H_DetectCycleUG_DFS {
 
     public static void main(String[] args) {
-        Map<Integer, ArrayList<Integer>> map = GraphAlgos.A_Representation.getUndirectedGraph();
+        Map<Integer, ArrayList<Integer>> map = GraphAlgos.A__Representation.getUndirectedGraph();
         Set<Integer> vis = new HashSet<>();
         int n = map.size();
         boolean flag = true;
