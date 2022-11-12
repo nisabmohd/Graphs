@@ -1,10 +1,10 @@
 package GraphAlgos;
 
-import static GraphAlgos.Representation.getDirectedGraph;
-import static GraphAlgos.Representation.getUndirectedGraph;
+import static GraphAlgos.A_Representation.getDirectedGraph;
+import static GraphAlgos.A_Representation.getUndirectedGraph;
 import java.util.*;
 
-public class DFS {
+public class C_DFS {
 
     public static void main(String[] args) {
         // dfs for undirected graph

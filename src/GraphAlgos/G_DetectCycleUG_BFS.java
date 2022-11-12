@@ -2,10 +2,10 @@ package GraphAlgos;
 
 import java.util.*;
 
-public class DetectCycleUG_BFS {
+public class G_DetectCycleUG_BFS {
 
     public static void main(String[] args) {
-        Map<Integer, ArrayList<Integer>> map = GraphAlgos.Representation.getDirectedGraph();
+        Map<Integer, ArrayList<Integer>> map = GraphAlgos.A_Representation.getDirectedGraph();
         int n = map.size();
         Set<Integer> vis = new HashSet<>();
         boolean flag = true;

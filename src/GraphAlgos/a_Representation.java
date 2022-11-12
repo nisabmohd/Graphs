@@ -2,7 +2,7 @@ package GraphAlgos;
 
 import java.util.*;
 
-public class Representation {
+public class A_Representation {
     // check out graph implementation in my data structure repo link : 
     // https://github.com/nisabmohd/Data-Structures/tree/master/src/Graphs
 

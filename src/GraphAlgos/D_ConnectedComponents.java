@@ -1,12 +1,12 @@
 package GraphAlgos;
 
-import static GraphAlgos.DFS.dfs;
-import static GraphAlgos.BFS.bfs;
-import static GraphAlgos.Representation.getDirectedGraph;
-import static GraphAlgos.Representation.getUndirectedGraph;
+import static GraphAlgos.C_DFS.dfs;
+import static GraphAlgos.B_BFS.bfs;
+import static GraphAlgos.A_Representation.getDirectedGraph;
+import static GraphAlgos.A_Representation.getUndirectedGraph;
 import java.util.*;
 
-public class ConnectedComponents {
+public class D_ConnectedComponents {
 
     public static void main(String[] args) {
         

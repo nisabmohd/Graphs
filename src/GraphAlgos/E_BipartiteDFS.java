@@ -2,10 +2,10 @@ package GraphAlgos;
 
 import java.util.*;
 
-public class BipartiteDFS {
+public class E_BipartiteDFS {
 
     public static void main(String[] args) {
-        Map<Integer, ArrayList<Integer>> map = GraphAlgos.Representation.getUndirectedGraph();
+        Map<Integer, ArrayList<Integer>> map = GraphAlgos.A_Representation.getUndirectedGraph();
         int n = map.size();
         Integer[] colours = new Integer[n];
         boolean flag = true;

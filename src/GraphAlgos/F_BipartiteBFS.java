@@ -1,9 +1,9 @@
 package GraphAlgos;
 
-import static GraphAlgos.Representation.getUndirectedGraph;
+import static GraphAlgos.A_Representation.getUndirectedGraph;
 import java.util.*;
 
-public class BipartiteBFS {
+public class F_BipartiteBFS {
 
     public static void main(String[] args) {
         Map<Integer, ArrayList<Integer>> map = getUndirectedGraph();
